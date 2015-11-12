@@ -1,0 +1,61 @@
+-- lefdy_config.txt - lefdy configuration file
+
+
+-- GLUT window parms, only used at startup
+glutWindow = {
+    displayMode = "rgb double depth stencil~2",
+    fullScreen = false,
+    hideCursor = false,
+}
+
+instanceName( "lefdy1" )
+-- controllerName( "lefdyMaster" )
+statsPrintInterval(0)
+
+cubeScene = {
+    spinRate = 30,              -- [degrees per second]?
+    scale = 70.0,               -- [mm/DBU]
+    lineWidth = 4,              -- [pixels]
+    model = 1,                  -- 0=wire, 1=solid
+}
+
+gearScene = {
+    spinRate = 30,              -- [degrees per second]?
+    scale = 10.0,               -- [mm/DBU]
+}
+
+teapotScene = {
+    scale = 100.0,              -- [mm/DBU]
+}
+
+
+viewer = {
+    pixelSize = 0.1177,         -- [mm]
+    originX = 0,                -- [mm] relative to composite origin
+    originY = 0,                -- [mm] relative to composite origin
+}
+
+camera = {
+    diameter = 8.00,            -- [mm]
+    fov = 48.00,                -- [degrees]
+}
+
+
+-- Scene selector
+ST_GEAR = 1
+ST_TEAPOT = 2
+ST_CUBE = 3
+ST_STENCIL = 9999
+sceneType = ST_GEAR
+sceneType = ST_TEAPOT
+sceneType = ST_STENCIL
+sceneType = ST_CUBE
+
+-- Viewer selector
+VT_SINGLE = 1
+VT_TABLE = 3
+VT_LFPLATEP = 5
+viewerType = VT_SINGLE
+viewerType = VT_LFPLATEP
+
+-- EOF

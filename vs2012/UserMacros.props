@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <VSVER>vs2012</VSVER>
+    <APP_ROOT>$(SolutionDir)..</APP_ROOT>
+    <APICGIT_ROOT>$(APP_ROOT)\..</APICGIT_ROOT>
+    <FREEGLUT_ROOT>$(APICGIT_ROOT)\freeglut-2.8.1</FREEGLUT_ROOT>
+    <LIBLUA_ROOT>$(APICGIT_ROOT)\lua-5.2.3</LIBLUA_ROOT>
+    <VRPN_ROOT>$(APICGIT_ROOT)\vrpn-07.33</VRPN_ROOT>
+    <NANOMSG_ROOT>$(APICGIT_ROOT)\nanomsg-0.5</NANOMSG_ROOT>
+    <PREBUILT_ROOT>$(APICGIT_ROOT)\prebuilt</PREBUILT_ROOT>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="VSVER">
+      <Value>$(VSVER)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="APP_ROOT">
+      <Value>$(APP_ROOT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="APICGIT_ROOT">
+      <Value>$(APICGIT_ROOT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="FREEGLUT_ROOT">
+      <Value>$(FREEGLUT_ROOT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="LIBLUA_ROOT">
+      <Value>$(LIBLUA_ROOT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="VRPN_ROOT">
+      <Value>$(VRPN_ROOT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="NANOMSG_ROOT">
+      <Value>$(NANOMSG_ROOT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="PREBUILT_ROOT">
+      <Value>$(PREBUILT_ROOT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

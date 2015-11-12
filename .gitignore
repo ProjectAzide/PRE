@@ -1,0 +1,15 @@
+
+Debug/
+Release/
+*.sdf
+*.suo
+*.opensdf
+*.swp
+*~
+*.o
+
+# this file should be checked-in empty, w/ contents generated when needed.
+src/GIT_DESCRIBE.h
+
+/.project
+/.cproject
